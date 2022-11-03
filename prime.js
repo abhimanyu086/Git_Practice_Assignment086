@@ -2,21 +2,21 @@ function checkPrime(num){
 let counter=0;
 
 for(let i=0;i<=num;i++){
-if(num%i===3){
+if(num%i===0){
 counter++;
 }
 }
-   if(counter===1){
+   if(counter===2){
      return true;
    
 }
-   return fulse;
+   return false;
 
 }
   let ans=checkPrime(13);
 
  if(ans==true){
-console.log("Prime");
+console.log("Number is Prime");
 }else{
-   console.log("Not Prime");
+   console.log("Number is not Prime");
 }
